@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Reddit Bot</title>
+
+		<!-- Font Awesome -->
+		<link rel="stylesheet" href="">
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+		<!-- Custom CSS -->
+        <link rel="stylesheet" href="assets/css/style.css">
+        
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-md-offset-3">
+                    <div class="row mar-t-50">
+                        <div class="col-md-12">
+                            <form action="" name ="" method="POST" id="select_reddit" accept-charset="utf-8" data-parsley-validate="" data-parsley-ui-enabled="true">
+                                <div class="row white-text f-18">
+                                    <div class="col-md-12">
+                                       <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox" name="politics" value="1">
+                                                Politics
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox" name="programming" value="2">
+                                                Programming
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox" name="business" value="3">
+                                                Business
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox" name="culinary" value="4">
+                                                Culinary
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox" name="ufc" value="5">
+                                                UFC
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox" name="bt" value="6">
+                                                Black Twitter
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox" name="funny" value="7">
+                                                Funny
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox" name="sports" value="8">
+                                                Sports
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox" name="irl" value="9">
+                                                IRL
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox" name="tech" value="10">
+                                                Technology
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                         <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox" name="news" value="11">
+                                                World news
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <a class="btn btn-primary" data-toggle="modal" href='#modal-id'>Trigger modal</a>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- Frequency modal -->
+                    <div class="modal fade" id="modal-id">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                    <h4 class="modal-title"> Choose update frequency</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <div id="display_msg"></div>
+
+                                    <form action="" method="POST" role="form">
+                                        <legend>Reddit Updates Frequency</legend>
+                                        <div class="row">
+                                            <div class="col-md-10 col-md-offset-1">
+                                                <div class="col-md-4">
+                                                    <label for="daily">Daily</label>
+                                                    <input type="radio" id="daily" name="frequency">
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <label for="weekly">Weekly</label>
+                                                    <input type="radio" id="weekly" name="frequency" >
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <label for="monthly">Monthly</label>
+                                                    <input type="radio" id="monthly" name="frequency" >
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                    
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary" id="saved">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/ Frequebcy modal -->
+                   
+                </div>
+            </div>
+        </div>
+        
+        <!-- jQuery -->
+		<script src="assets/plugins/bootstrap/js/jquery-3.2.1.min.js"></script>
+		<!-- Bootstrap JavaScript -->
+        <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+        <!-- Parsley JS -->
+        <script src="assets/plugins/parsley/parsley.min.js"></script>
+        <!-- Main JS -->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>

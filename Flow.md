@@ -5,3 +5,7 @@ Reddit Bot Flow
 	- Choose update frequency
 		- daily or weekly
 	- Get first set of updates
+	
+background:#24333C;
+
+

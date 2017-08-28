@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Reddit Bot</title>
+
+		<!-- Font Awesome -->
+		<link rel="stylesheet" href="">
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+		<!-- Custom CSS -->
+		<link rel="stylesheet" href="assets/css/style.css">
+	</head>
+	<body>
+		<div class="col-xs-12 mar-t-50">
+			<h1 class="banner_text text-center white-text">Welcome</h1>
+			<h3 class="text-center white-text">Get updates from your subreddits faster</h3>
+			<p class="text-center white-text f-18">Log in <a href="#" class="login_link black-text" data-toggle="modal" data-target="#loginModal">here</a></p>
+		</div>
+		<!-- login modal -->
+		<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<div>
+							<!-- Nav tabs -->
+							<ul class="nav nav-tabs" role="tablist">
+							    <li role="presentation" class="signup_tab active"><a href="#signUp" aria-controls="home" role="tab" data-toggle="tab">Sign Up</a></li>
+							    <li role="presentation" class="login_tab"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Log In</a></li>
+							</ul>
+
+							<!-- Tab panes -->
+							<div class="tab-content">
+							    <div role="tabpanel" class="tab-pane active" id="signUp">
+							    	<h1 class="signup text-center">Sign Up for Free</h1>
+							    	<form action="options.html" name="declaration" id="signup" method="POST" 
+										accept-charset="utf-8" data-parsley-validate="" data-parsley-ui-enabled="true" >
+							    		<div class="row text-center">
+								    		<div class="col-md-6">
+								    			<input type="text" name="" placeholder="First Name*" autofocus required class="input-dim">
+								    		</div>
+								    		<div class="col-md-6">
+								    			<input type="text" name="" placeholder="Last Name*" class="input-dim">
+								    		</div>
+								    	</div>
+								    	<div class="row text-center">
+								    		<div class="col-xs-12">
+								    			<input type="email" name="" autofocus required placeholder="Email Address*" class="input-dim">
+								    		</div>
+								    	</div>
+								    	<div class="row text-center">
+								    		<div class="col-xs-12">
+								    			<input type="password" name="" placeholder="Set a password" autofocus required class="input-dim">
+								    		</div>
+								    	</div>
+								    	<div class="row">
+								    		<div class="col-md-12">
+								    			<button class="btn btn-block btn-start">Get Started</button>
+								    		</div>
+								    	</div>
+							    	</form>
+							    	
+							    </div>
+							    <div role="tabpanel" class="tab-pane" id="profile">
+									<form action="options.html" name="declaration" id="signup" method="POST" 
+										accept-charset="utf-8" data-parsley-validate="" data-parsley-ui-enabled="true">
+						    			<h1 class="text-center">Log In here</h1>
+						    			<div class="row m-t-30 text-center">
+						    				<div class="col-md-12">
+						    					<input type="email" name="" placeholder="Email *" autofocus required class="login-input">
+						    				</div>
+						    			</div>
+						    			<div class="row text-center">
+						    				<div class="col-md-12">
+						    					<input type="password" name="" placeholder="password *" class="login-input">
+						    				</div>
+						    			</div>
+						    			<div class="row text-center">
+						    				<div class="col-md-10 col-md-offset-1">
+						    					<button type="submit" class="btn btn-block btn-login f-18">Log in</button>
+						    				</div>
+						    			</div>
+								    </form>
+							    </div>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" data-dismiss="modal" class="modal-close">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- jQuery -->
+		<script src="assets/plugins/bootstrap/js/jquery-3.2.1.min.js"></script>
+		<!-- Bootstrap JavaScript -->
+		<script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+		<!-- Parsley JS -->
+		<script src="./assets/plugins/parsley/parsley.min.js"></script>
+		<script>
+			$("#signup").parsley();
+		</script>
+		
+	</body>
+</html>
